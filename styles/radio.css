@@ -10,9 +10,6 @@
   background-color: #fff;
   display: block;
   border: 1px solid #d3d3d3;
-  border-radius: 32px;
-  width: 54.4px;
-  height: 32px;
   transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   -webkit-transition: background-color 0.3s;
@@ -20,8 +17,8 @@
 }
 .simple-radio .dot {
   background-color: #fff;
-  width: 30px;
-  height: 30px;
+  width: 62.5%;
+  height: 100%;
   border-radius: 50%;
   border: 1px solid #d3d3d3;
   -moz-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.2);
@@ -40,6 +37,6 @@
   border-color: #53d76a;
 }
 .simple-radio.on .dot {
-  margin-left: 22.4px;
+  margin-left: 37.5%;
   border-color: transparent;
 }
