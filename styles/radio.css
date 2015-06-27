@@ -14,6 +14,7 @@
   -moz-transition: background-color 0.3s;
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
+  position: relative;
 }
 .simple-radio .dot {
   background-color: #fff;
@@ -28,6 +29,8 @@
   -moz-transition: margin-left 0.3s;
   -webkit-transition: margin-left 0.3s;
   -o-transition: margin-left 0.3s;
+  position: relative;
+  z-index: 2;
 }
 .simple-radio input[type=radio] {
   display: none;
@@ -39,4 +42,13 @@
 .simple-radio.on .dot {
   margin-left: 37.5%;
   border-color: transparent;
+}
+.simple-radio.disabled {
+  background-color: #F8F8F8;
+}
+.simple-radio.disabled.on {
+  background-color: #A3D8AC;
+}
+.simple-radio.disabled .dot {
+  background-color: #F1F1F1;
 }

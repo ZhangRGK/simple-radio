@@ -17,6 +17,7 @@ $shadow: rgba(0,0,0,0.2);
     -moz-transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
+    position: relative;
     .dot {
         background-color: $white;
         // 减去 border的高度
@@ -31,6 +32,8 @@ $shadow: rgba(0,0,0,0.2);
         -moz-transition: margin-left 0.3s;
         -webkit-transition: margin-left 0.3s;
         -o-transition: margin-left 0.3s;
+        position: relative;
+        z-index: 2;
     }
     input[type=radio] {
         display: none;
@@ -41,6 +44,15 @@ $shadow: rgba(0,0,0,0.2);
         .dot {
             margin-left: 37.5%;
             border-color: rgba(0,0,0,0);
+        }
+    }
+    &.disabled{
+        background-color: #F8F8F8;
+        &.on {
+            background-color: #A3D8AC;
+        }
+        .dot {
+            background-color: #F1F1F1;
         }
     }
 }
