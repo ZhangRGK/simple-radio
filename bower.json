@@ -1,0 +1,30 @@
+{
+  "name": "simple-radio",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ZhangRGK/simple-radio",
+  "authors": [
+    "ZhangRGK <stamen0630@gmail.com>"
+  ],
+  "main": "lib/radio.js",
+  "keywords": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "spec",
+    "node_modules",
+    "vendor",
+    "Gemfile",
+    "Gemfile.lock",
+    "Gruntfile.coffee",
+    "package.json",
+    "README.md",
+    "demo.html",
+    "circle.yml",
+    "umd.hbs"
+  ],
+  "dependencies": {
+    "jquery": "2.x",
+    "simple-module": "2.x"
+  }
+}
+

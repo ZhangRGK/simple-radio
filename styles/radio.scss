@@ -1,0 +1,52 @@
+$white: #fff;
+$green: #53d76a;
+$grey: #d3d3d3;
+$shadow: rgba(0,0,0,0.2);
+
+$height: 32px;
+$width: 1.7 * $height;
+
+* {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.simple-radio {
+    background-color: $white;
+    display: block;
+    border: 1px solid $grey;
+    border-radius: $height;
+    width: $width;
+    height: $height;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    .dot {
+        background-color: $white;
+        // 减去 border的高度
+        width: $height - 1px * 2;
+        height: $height - 1px * 2;
+        border-radius: 50%;
+        border: 1px solid $grey;
+        -moz-box-shadow: 0 1px 5px 1px $shadow;
+        -webkit-box-shadow: 0 1px 5px 1px $shadow;
+        box-shadow: 0 1px 5px 1px $shadow;
+        transition: margin-left 0.3s;
+        -moz-transition: margin-left 0.3s;
+        -webkit-transition: margin-left 0.3s;
+        -o-transition: margin-left 0.3s;
+    }
+    input[type=radio] {
+        display: none;
+    }
+    &.on {
+        background-color: $green;
+        border-color: $green;
+        .dot {
+            margin-left: 0.7 * $height;
+            border-color: rgba(0,0,0,0);
+        }
+    }
+}
