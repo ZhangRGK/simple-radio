@@ -34,7 +34,15 @@
             <h1>Simple Radio</h3>
         </header>
         <section>
-            <input type="toggle" data-size="50"/>
+            <input type="radio"/>
+            <hr />
+            <input type="radio" data-size="50"/>
+            <hr />
+            <input type="radio" data-size="50" value="on"/>
+            <hr />
+            <input type="radio" data-size="50" disabled/>
+            <hr />
+            <input type="radio" data-size="50" disabled value="on"/>
         </section>
     </div>
     <script type="text/javascript" src="vendor/bower/jquery/dist/jquery.min.js"></script>
@@ -42,7 +50,7 @@
     <script type="text/javascript" src="lib/radio.js"></script> 
     <script type="text/javascript">
         $(document).ready(function(){
-            $('[type=toggle]').each(function(index, ele) {
+            $('[type=radio]').each(function(index, ele) {
                 $ele = $(ele);
                 simple.radio({
                     el: $ele
